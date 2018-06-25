@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="The website of Tyler Nielson.">
+        <meta name="author" content="Tyler Nielson">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link rel="stylesheet" href="static/css/index_style.css">
+        <link href="http://www.w3schools.com/lib/w3.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <title>Home - Tyler Nielson</title>
+    </head>
+
+    <body>
+        <!-- Taken from the w3schools responsive topnav howto -->
+        <div class="navbar" id="navbar">
+            <a class="active" href="">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="resume.html">Resume</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responsiveDesignFunc()">&#9776;</a>
+        </div>
+
+        <div class="parallax">
+            <div class="w3-display-middle w3-padding-large w3-text-white w3-animate-opacity w3-center" style="background-color:rgba(0,0,0, 0.5);">
+                <h1 class="title w3-hide-medium w3-hide-small w3-xxxlarge" style=font-family:'Ubuntu',sans-serif;><b>TYLER NIELSON</b></h1>
+                <h3 class="title w3-hide-medium w3-hide-small" style=font-family:'Ubuntu',sans-serif;>SOFTWARE ENGINEER</h3>
+                <h4 class="title w3-hide-medium w3-hide-small" style=font-family:'Ubuntu',sans-serif;>FULL STACK DEVELOPER</h4>
+                
+                <h5 class="w3-hide-large" style="white-space:nowrap;" style=font-family:'Ubuntu',sans-serif;><b>TYLER NIELSON</b></h5>
+                <div class="social">
+                    <a href="https://github.com/tylernielson1" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+                    <a href="mailto:tyler.snielson@gmail.com"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/tyler-nielson-a37143106/" target="_blank"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+                function responsiveDesignFunc() {
+                    var x = document.getElementById("navbar");
+                    if (x.className === "navbar") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "navbar";
+                    }
+                }
+            </script>
+    </body>
+</html>

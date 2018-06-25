@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="static/css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link href="http://www.w3schools.com/lib/w3.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>About - Tyler Nielson</title>
+    </head>
+
+    <body>
+        <!-- Taken from the w3schools responsive topnav howto -->
+        <div class="navbar" id="navbar">
+            <a href="index.html">Home</a>
+            <a class="active" href="#">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="resume.html">Resume</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responsiveDesignFunc()">&#9776;</a>
+        </div>
+
+        <header class="myHeader">
+            <div>
+                <h1 style="font-family:'Ubuntu',sans-serif;">
+                    About Me
+                </h1>
+            </div>
+        </header>
+		
+		<div class="row">
+			<div class="filler">
+			</div>
+			<div class="galHeading">
+				<h1>Some pictures of me</h1>
+			</div>
+			<div class="filler">
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="filler">
+			</div>
+			<div class="responsiveGallery">
+				<div class="gallery">
+					<a target="_blank" href="static/images/ct.jpg">
+						<img src="static/images/ct.jpg" alt="tyler&chey" width="300" height="200">
+					</a>
+				</div>
+			</div>
+			
+			<div class="responsiveGallery">
+				<div class="gallery">
+					<a target="_blank" href="static/images/ct2.jpg">
+						<img src="static/images/ct2.jpg" alt="tyler&chey2" width="300" height="200">
+					</a>
+				</div>
+			</div>
+
+			<div class="responsiveGallery">
+				<div class="gallery">
+					<a target="_blank" href="static/images/dt.jpg">
+						<img src="static/images/dt.jpg" alt="tyler&dad" width="300" height="200">
+					</a>
+				</div>
+			</div>
+			
+			<div class="responsiveGallery">
+				<div class="gallery">
+					<a target="_blank" href="static/images/jkt.jpg">
+						<img src="static/images/jkt.jpg" alt="tylerkevin&dokos" width="300" height="200">
+					</a>
+				</div>
+			</div>
+			<div class="filler">
+			</div>
+		</div>
+
+        <div class="row">
+            <div class="filler">
+            </div>
+            <div class="bio">
+                TODO
+            </div>
+            <div class="filler">
+            </div>
+		</div>
+		
+		<div class="w3-content w3-container w3-center">
+			<footer>
+				Copyright 2018 tylernielson.me
+				<br>
+				Site design by Tyler Nielson
+				<br>
+				Homepage background by Scott Nielson
+			</footer>
+		</div>
+
+        <script>
+            function responsiveDesignFunc() {
+                var x = document.getElementById("navbar");
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar";
+                }
+            }
+        </script>
+    </body>
+</html>
