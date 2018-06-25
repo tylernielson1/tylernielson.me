@@ -1,2 +1,2 @@
-# tylernielson1.github.io
+# tylernielson1.me
 My personal website - Hosted on Github pages.
